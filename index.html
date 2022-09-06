@@ -1,1 +1,384 @@
-Hello World
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dominik Katkó - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(#ccc, #fff);
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            padding: 20px;
+            color: #666666;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+
+        .cv {
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 26px auto 0;
+            max-width: 900px;
+            min-height: 300px;
+            padding: 80px;
+            position: relative;
+            width: 80%;
+        }
+
+        .cv:before,
+        .cv:after {
+            content: "";
+            height: 98%;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .cv:before {
+            background: #fafafa;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            left: -5px;
+            top: 4px;
+            transform: rotate(-2.5deg);
+        }
+
+        .cv:after {
+            background: #f6f6f6;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            right: -3px;
+            top: 1px;
+            transform: rotate(1.4deg);
+        }
+
+        h1 {
+            color: #833C0B;
+            font-size: 1.5em;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: 600;
+            border-style: solid;
+            border-width: 0 0 3px 0;
+            border-color: #833C0B;
+            margin-bottom: 0;
+            padding-bottom: 2px;
+        }
+
+        h3, h4 {
+            color: #833C0B;
+            margin: 15px 0 5px 0;
+            font-size: 14px;
+        }
+
+        *[data-target] {
+            cursor: pointer;
+        }
+
+        table.data {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 5px 0 5px 0;
+        }
+
+        .entries {
+            margin-left: 20px;
+            border-style: solid;
+            border-width: 0 0 0 3px;
+            border-color: #833C0B;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #833C0B;
+            text-decoration: none;
+        }
+
+        .date {
+            float: right;
+            clear: both;
+            color: #666666;
+            font-weight: 600;
+            margin: 0 10px 0 10px;
+            padding: 0 0 0 5px;
+            border-style: solid;
+            border-width: 0 0 0 3px;
+            border-color: #833C0B;
+        }
+
+        .divider {
+            margin: 3px;
+        }
+
+        .divider::after {
+            color: #833C0B;
+            content: "|";
+            font-weight: 600;
+        }
+        .at::before {
+            color: #833C0B;
+            content: "@";
+            font-weight: 600;
+        }
+
+        .expandable {
+            overflow: hidden;
+            height: inherit;
+        }
+
+        .expandable * {
+            margin-top: -10%;
+            transition: all .2s;
+        }
+
+        .expanded * {
+            margin-top: inherit;
+            transition: all .2s ease-in-out;
+        }
+
+        .material-symbols-outlined {
+            padding-top: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="cv">
+        <h1>Dominik Katkó</h1>
+        <h2>Software developer & Computer Science Msc. student</h2>
+        <table class="data">
+            <tr>
+                <td>Hungarian</td>
+                <td>05/23/2000</td>
+                <td>Phone TODO</td>
+                <td>Email TODO</td>
+                <td><a href="https://www.linkedin.com/in/kdmnk/" target="_blank">LinkedIn</a></td>
+            </tr>
+        </table>
+        <div class="description">
+            <p>I am a multifaceted, diligent, motivated student relocating to Copenhagen.</p>
+            <p>I am looking for a part-time job to deepen my knowledge in web development or to try developing new,
+                ground-breaking technologies in the field of cloud, data security or functional programming.</p>
+            <p>I will be a good member of multicultural teams and I am confident that I can bring fresh impetus to the
+                work
+                with my creative vision, while I can learn quickly from senior colleagues.</p>
+        </div>
+        <div class="section">
+            <h3>Experience</h3>
+            <ul class="entries">
+                <li>
+                    <h4>Full-Stack web developer (Laravel & Vue.js)</h4>
+                    <p>Internship at <a href="https://www.groteszk.hu/" target="_blank">Groteszk Kreatív Társulat </a> <span
+                                class="date">2022 Summer</span></p>
+                    <p data-target="projects">Hobby projects and contracts <i class="bi bi-chevron-down" data-toggle-icon="projects"></i> <span class="date">2019-</span></p>
+                    <div id="projects" class="expandable">
+                        <ul>
+                            <li>
+                                    <p><b>Urán - Unified IT System of the Eötvös József College for Advanced Studies</b></p>
+                                    <p>TODO</p>
+                                    <p><a href="https://github.com/EotvosCollegium/mars" target="_blank">Website (github.com)</a></p>
+                            </li>
+
+                            <li><a href="https://ekvivalencia.btk.elte.hu" target="_blank"
+                                    title="Erasmus course equivalences for the Faculty of Humanities at ELTE">
+                                    Erasmus course equivalence database</a></li>
+                            <li><a href="https://lenderapp.net" target="_blank"
+                                    title="Lender - Money and dept management app designed for groups">
+                                    API for a finance app</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h4>Erlang <span class="date">2021 - 2022</span></h4>
+                    <p>Implemented the <a href="https://github.com/RefactoringTools/wrangler"
+                            title="Wrangler - a refactoring tool for Erlang programs" target="_blank">
+                            Language Server Protocol in the Wrangler refactoring tool.</a>
+                    </p>
+                </li>
+                <li>
+                    <h4>K Framework <span class="date">2021</span></h4>
+                    <p>Updated the formal semantics of Erlang to a new K version</p>
+                </li>
+                <li>
+                    <h4>Network administrator <span class="date">2019-2022</span></h4>
+                    <p>Linux servers (Apache/Nginx, DHCP and Radius)</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Studies</h3>
+            <ul class="entries">
+                <li>
+                    <h4 id="dtu">Technical University of Denmark (DTU) <span class="date">2022 - </span></h4>
+                    <p>Computer Science and Engineering MSc.</p>
+                </li>
+                <li>
+                    <h4 id="elte">Eötvös Loránd University (ELTE) <span class="date">2019 - 2022</span></h4>
+                    <p>Computer Science BSc. <span class="divider"></span> Program design specialization</p>
+                    <p>Grade: 5 (excellent) <span class="divider"></span> GPA: 4.9</p>
+                </li>
+                <li>
+                    <h4 id="ejc">ELTE Eötvös József College for Advanced Studies (EJC) <span class="date">2019 -
+                            2022</span>
+                    </h4>
+                    <p data-target="ejc_desc">Member of the Information Technology Workshop <i class="bi bi-chevron-down" data-toggle-icon="ejc_desc"></i></p>
+                    <div id="ejc_desc" class="expandable">
+                        <p>Several additional courses, such as research seminar and lambda calculus</p>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Other experience & volunteering</h3>
+            <ul class="entries">
+                <li>
+                    <h4>Assistant instructor <span class="date">2020 - 2022</span></h4>
+                    <p>OOP
+                        <span class="divider"></span> programming theory
+                        <span class="divider"></span> Laravel
+                        <span class="divider"></span> basic programming to non-IT students
+                        <span class="at"><a href="#elte">ELTE</a>&<a href="#ejc">EJC</a></span>
+                    </p>
+                </li>
+                <li>
+                    <h4>Student Council member <span class="date">2020 - 2022</span></h4>
+                    <p>Leader of the Communicational (20/21) & Community (21/22) Committee <span class="at"><a href="#ejc">EJC</a></span></p>
+                    
+                </li>
+                <li>
+                    <h4>Program organizer <span class="date">2022</span></h4>
+                    <p>Assisting the career guidance of high school students & organizing related events <span class="at"><a href="https://www.hischool.hu">HiSchool</a></span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Achievements</h3>
+            <ul class="entries">
+                <li>
+                    <h4>Hungarian National Higher Educational Scholarship <span class="date">2021/2022</span></h4>
+                </li>
+                <li>
+                    <h4>John von Neumann talent development group membership <span class="at"><a href="#elte">ELTE</a></span><span class="date">2019 - 2022</span></h4>
+                </li>
+                <li>
+                    <h4>Outstanding Student of the Faculty <span class="at"><a href="#elte">ELTE</a></span><span class="date">2021</span></h4>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Technologies</h3>
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>*****</td>
+                </tr>
+                <tr>
+                    <td>Erlang</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <td>Haskell</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Vue.js</td>
+                    <td>**</td>
+                </tr>
+                <tr>
+                    <td>Oracle SQL & Mysql</td>
+                    <td>****</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>****</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>****</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>**</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <h3>Research interests</h3>
+            <p>Data security
+                <span class="divider"></span> program analysis & verification
+                <span class="divider"></span> compilers
+            </p>
+        </div>
+        <div class="section">
+            <h3>Languages</h3>
+            <ul class="entries">
+                <li>
+                    <h4>Hungarian</h4>
+                    <p>native</p>
+                </li>
+                <li>
+                    <h4>English</h4>
+                    <p>IELTS Academic 7.5 points <span class="date">2022</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Recommendations</h3>
+            <p>TODO</p>
+        </div>
+        <div class="section">
+            <h3>About me</h3>
+            <p>I am always looking for new ways how can I help the communities around me and create something new.
+                Although I have tried myself in many areas, I am still ready to experience and learn new things and
+                technologies.</p>
+            <p>When it comes to programming, I am interested in new architectural concepts and how these support
+                maintainable,
+                transparent, and secure code by design.</p>
+            <p>In my free time, I go hiking or cycling with friends, play board games or paint some pictures.</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $("[data-target]").click(function (e) {
+        $("#" + $(this).data('target')).toggleClass("expanded");
+        $("[data-toggle-icon="+$(this).data('target')+"]").toggleClass("bi-chevron-down");
+        $("[data-toggle-icon="+$(this).data('target')+"]").toggleClass("bi-chevron-up");
+    })
+</script>
+
+</html>
