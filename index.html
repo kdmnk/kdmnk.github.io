@@ -8,213 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style>
-        body {
-            background: linear-gradient(#ccc, #fff);
-            font-family: 'Lato', sans-serif;
-            font-size: 16px;
-            padding: 20px;
-            color: #666666;
-        }
-        b { font-size: 14px;}
-
-
-        ul {
-            list-style-type: none;
-        }
-
-        li {
-            margin-bottom: 15px;
-        }
-
-        .cv {
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            margin: 26px auto 0;
-            max-width: 900px;
-            min-height: 300px;
-            padding: 80px;
-            position: relative;
-            width: 80%;
-        }
-
-        .cv:before,
-        .cv:after {
-            content: "";
-            height: 98%;
-            position: absolute;
-            width: 100%;
-            z-index: -1;
-        }
-
-        .cv:before {
-            background: #fafafa;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-            left: -5px;
-            top: 4px;
-            transform: rotate(-2.5deg);
-        }
-
-        .cv:after {
-            background: #f6f6f6;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-            right: -3px;
-            top: 1px;
-            transform: rotate(1.4deg);
-        }
-
-        h1 {
-            color: #833C0B;
-            font-size: 1.5em;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-
-        h2 {
-            font-size: 1em;
-            font-weight: 600;
-            border-style: solid;
-            border-width: 0 0 3px 0;
-            border-color: #833C0B;
-            margin-bottom: 0;
-            padding-bottom: 2px;
-            margin-right: 20%;
-        }
-
-        h3,
-        h4 {
-            color: #833C0B;
-            margin: 15px 0 5px 0;
-            font-size: 14px;
-        }
-
-        *[data-target] {
-            cursor: pointer;
-        }
-
-        table.data {
-            margin: 0;
-            padding: 0;
-        }
-
-        td {
-            padding: 0 20px 0 20px;
-        }
-
-        p {
-            margin: 5px 0 5px 0;
-        }
-
-        .entries {
-            margin-left: 20px;
-            border-style: solid;
-            border-width: 0 0 0 3px;
-            border-color: #833C0B;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        a {
-            color: #833C0B;
-            text-decoration: none;
-        }
-
-        .date {
-            float: right;
-            clear: both;
-            color: #666666;
-            font-weight: 600;
-            margin: 0 10px 0 10px;
-            padding: 0 0 0 5px;
-            border-style: solid;
-            border-width: 0 0 0 3px;
-            border-color: #833C0B;
-        }
-
-        .divider {
-            margin: 3px;
-        }
-
-        .divider::after {
-            color: #833C0B;
-            content: "|";
-            font-weight: 600;
-        }
-
-        .at::before {
-            color: #833C0B;
-            content: "@";
-            font-weight: 600;
-        }
-
-        .expandable {
-            overflow: hidden;
-            height: inherit;
-        }
-
-        .expandable * {
-            margin-top: -15%;
-            transition: all .2s;
-        }
-
-        .expanded * {
-            margin-top: inherit;
-            transition: all .2s ease-in-out;
-        }
-
-        .material-symbols-outlined {
-            padding-top: 5px;
-        }
-
-        img {
-            float: right;
-            border-radius: 50%;
-            border-color: white;
-            border-style: solid;
-            border-width: 10px;
-            border-collapse: collapse;
-        }
-
-        .row {
-            display: flex;
-            width: 100%;
-        }
-        .row:nth-child(2n+1), table.striped tr:nth-child(2n+1) {
-            background-color: #eeeeee;
-        }
-
-        .col {
-            padding: 0 10px 0 10px;
-            display: flex;
-            width: 25%;
-            justify-content: space-between;
-        }
-
-        .col p:nth-child(2) {
-            color: #833C0B;
-            font-weight: 600;
-        }
-
-        .row::after {
-            /* display: block;*/
-            clear: both;
-            content: "";
-        }
-
-        .left {
-            float: left;
-            margin-right: 10px
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -242,11 +38,24 @@
             </tr>
         </table>
         <div class="description">
-            <p>I am a multifaceted, diligent, motivated student relocated to Copenhagen in 2022.</p>
-            <p>I am interested in the development of new, ground-breaking technologies in the field of cloud, 
-                data security or functional programming.</p>
-            <p>I am a good member of multicultural teams and I bring fresh impetus to the
-                work with my creative vision, while I can learn quickly from senior colleagues.</p>
+            <p>
+                I am a fan of <i>functional programming, formal verification, cool architecture</i> and <i>unique problems</i>. 
+                I believe that the best solution begins on <i>paper</i>, not with <i>chatgpt</i>.
+            </p>
+                <p>
+                I am ready to offer my ideas, take action and engage in discussions.
+                I am in my best potential when I work in <i>collaborative communities</i>, where trust is key.
+            </p>
+            <p>
+                In my free time, I love hiking, cycling, bouldering and playing board games.
+                However, my nerdiness for <i>teas</i> comes the first place. 
+            </p>
+            
+            <p class="headline">
+                <span><i>I <b>learn</b> to make <b>reliable software</b>.</i></span>
+                <span><i>I <b>work</b> to make things <b>happen</b>.</i></span>
+                <span><i>I <b>contribute</b> to <b>belong</b>.</i></span>
+            </p>
         </div>
         <div class="section">
             <h3>Experience</h3>
@@ -254,48 +63,37 @@
                 <li>
                     <h4>Software developer <span class="at"><a href="https://trifork.com/">Trifork</a></span>
                         <span class="date">2022 -</span></h4>
-                    <p>Greentech solutions in Elixir <span class="divider"></span> Part-time</p>
-                <li>
-                    <h4>Full-Stack web developer</h4>
-                    <p>Internship <span class="at"><a href="https://www.groteszk.hu/" target="_blank">Groteszk Kreatív Társulat</a></span>
-                        <span class="date">2022 Summer</span>
-                    </p>
-                    <p data-target="projects">Hobby projects and contracts 
-                        <i class="bi bi-chevron-down" data-toggle-icon="projects"></i> <span class="date">2019-</span></p>
-                    <div id="projects" class="expandable">
-                        <ul>
-                            <li>
-                                <p><b>Urán - Unified IT System of <a href="#ejc">EJC</a></b></p>
-                                <p>Voluntarily open-source work</p>
-                                <p>Website: <a href="https://github.com/EotvosCollegium/mars" target="_blank">github.com</a></p>
-                            </li>
-                            <li>
-                                <p><b>Erasmus course equivalence database</b></p>
-                                <p>Contract by the Faculty of Humanities <span class="at"><a href="#elte">ELTE</a></span></p>
-                                <p>Website: <a href="https://ekvivalencia.btk.elte.hu" target="_blank">ekvivalencia.btk.elte.hu</a>
-                            </p>
-                            <li>
-                                <p><b>Lender - Money and dept management app designed for groups</b></p>
-                                <p>Project with Sámuel Szajbély <span class="divider"></span> I created the API</p>
-                                <p>Website: <a href="https://lenderapp.net" target="_blank">lenderapp.net</a></p>
-                            </li>
-                        </ul>
-                    </div>
+                    <p>Full-stack solutions mostly in Elixir, React, C#<span class="divider"></span> Part-time</p>
                 </li>
                 <li>
-                    <h4>Erlang <span class="date">2021 - 2022</span></h4>
-                    <p>Implemented the <a href="https://github.com/RefactoringTools/wrangler"
-                            title="Wrangler - a refactoring tool for Erlang programs" target="_blank">
-                            Language Server Protocol in the Wrangler refactoring tool</a>
-                    </p>
+                    <h4>MSc thesis: Model-based development and analysis of distributed systems with Elixir and mCRL2</h4>
                 </li>
                 <li>
-                    <h4>K Framework <span class="date">2021</span></h4>
-                    <p>Updated the formal semantics of Erlang to a new K version</p>
+                    <h4>BSc thesis: Implementing the Language Server Protocol in the <a href="https://github.com/RefactoringTools/wrangler">Wrangler refactoring tool</a> (Erlang)</h4>
+                </li>
+                <li>
+                    <h4>Updated the formal semantics of Erlang in the <a href="https://kframework.org" target="_blank">K Framework</a> <span class="date">2021</span></h4>
                 </li>
                 <li>
                     <h4>Network administrator <span class="at"><a href="#ejc">EJC</a></span> <span class="date">2019-2022</span></h4>
                     <p>Linux servers (Apache/Nginx, DHCP and Radius)</p>
+                </li>
+                <li>
+                    <p data-target="projects">Hobby projects and contracts 
+                        <i class="bi bi-chevron-down" data-toggle-icon="projects"></i></p>
+                    <div id="projects" class="expandable">
+                        <ul>
+                            <li>
+                                <p><a href="https://github.com/EotvosCollegium/mars" target="_blank">Urán</a> - Unified IT System of <a href="#ejc">EJC</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://ekvivalencia.btk.elte.hu">Erasmus course equivalence database</a> for the Faculty of Humanities <span class="at"><a href="#elte">ELTE</a></span></p>
+                            </p>
+                            <li>
+                                <p><a href="https://dodoapp.net" target="_blank">Dodo</a> - Privacy-focused bill splitting app (project with a friend)</p>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -303,31 +101,55 @@
             <h3>Studies</h3>
             <ul class="entries">
                 <li>
-                    <h4 id="dtu">Technical University of Denmark (DTU) <span class="date">2022 - </span></h4>
-                    <p>Computer Science and Engineering MSc.</p>
+                    <h4 id="dtu"><a href="https://www.dtu.dk/english/" target="_blank">Technical University of Denmark</a> (DTU) <span class="date">2022 - <i>2025</i></span></h4>
+                    <p>Computer Science and Engineering MSc.<span class="divider"></span> Safe and secure by design specialization</p>
+                    <p>Current GPA: 4.9 / 5</p>
                 </li>
                 <li>
-                    <h4 id="elte">Eötvös Loránd University (ELTE) <span class="date">2019 - 2022</span></h4>
+                    <h4 id="elte"><a href="https://www.elte.hu" target="_blank">Eötvös Loránd University</a> (ELTE) <span class="date">2019 - 2022</span></h4>
                     <p>Computer Science BSc. <span class="divider"></span> Program design specialization</p>
                     <p>Grade: 5 (excellent) <span class="divider"></span> GPA: 4.9 / 5</p>
                 </li>
                 <li>
-                    <h4 id="ejc">ELTE Eötvös József College for Advanced Studies (EJC)
+                    <h4 id="ejc"><a href="https://eotvos.elte.hu" target="_blank">ELTE Eötvös József College for Advanced Studies</a> (EJC)
                         <span class="date">2019 - 2022</span>
                     </h4>
                     <p data-target="ejc_desc">Member of the Information Technology Workshop
                         <i class="bi bi-chevron-down" data-toggle-icon="ejc_desc"></i>
                     </p>
                     <div id="ejc_desc" class="expandable">
-                        <p>Several additional courses, such as research seminar and lambda calculus</p>
+                        <p>I had several additional courses here, such as research seminar and lambda calculus</p>
                     </div>
-
                 </li>
             </ul>
         </div>
         <div class="section">
             <h3>Other experience & volunteering</h3>
             <ul class="entries">
+                <li>
+                    <h4 data-target="org">Event organiser
+                        <span class="at"><a href="https://best.dtu.dk">BEST Copenhagen</a></span>
+                        <i class="bi bi-chevron-down" data-toggle-icon="board member"></i>
+                        <span class="date">2023 - 2025</span>
+                    </h4>
+                    <div id="org" class="expandable">
+                        <p>Hackathons<span class="divider"></span>
+                            Summer Course<span class="divider"></span>
+                            Smaller social & cultural events</p>
+                    </div>
+                </li>
+                <li>
+                    <h4 data-target="hr">Vice-president for Human Resources
+                        <span class="at"><a href="https://best.dtu.dk">BEST Copenhagen</a></span>
+                        <i class="bi bi-chevron-down" data-toggle-icon="board member"></i>
+                        <span class="date">2023 - 2024</span>
+                    </h4>
+                    <div id="hr" class="expandable">
+                        <p>Board member
+                            <span class="divider"></span> Mentorship program coordinator
+                        </p>
+                    </div>
+                </li>
                 <li>
                     <h4 data-target="ta">Assistant instructor 
                         <span class="at"><a href="#elte">ELTE</a>&<a href="#ejc">EJC</a></span>
@@ -348,12 +170,12 @@
                         <i class="bi bi-chevron-down" data-toggle-icon="council"></i>
                         <span class="date">2020 - 2022</span></h4>
                     <div id="council" class="expandable">
-                        <p>Leader of the Communicational Committee <span class="date">2020/21</span></p>
-                        <p>Leader of the Community Committee <span class="date">2021/22</span></p>
+                        <p>Leader of the Communicational Committee</p>
+                        <p>Leader of the Community Committee</p>
                     </div>
                 </li>
                 <li>
-                    <h4 data-target="hischool">Program organizer 
+                    <h4 data-target="hischool">Event organiser 
                         <span class="at"><a href="https://www.hischool.hu">HiSchool</a>
                         <i class="bi bi-chevron-down" data-toggle-icon="hischool"></i>
                         <span class="date">2022</span>
@@ -370,56 +192,44 @@
                 <li>
                     <div class="row">
                         <div class="col">
-                            <p>Laravel</p>
+                            <p>Erlang, Elixir</p>
                             <p>*****</p>
                         </div>
                         <div class="col">
-                            <p>Erlang</p>
-                            <p>***</p>
+                            <p>Laravel, PHP</p>
+                            <p>*****</p>
                         </div>
                         <div class="col">
-                            <p>Java</p>
-                            <p>***</p>
-                        </div>
-                        <div class="col">
-                            <p>PHP</p>
-                            <p>***</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>C++</p>
-                            <p>***</p>
-                        </div>
-                        <div class="col">
-                            <p>Haskell</p>
-                            <p>*</p>
-                        </div>
-                        <div class="col">
-                            <p>Vue.js</p>
-                            <p>**</p>
-                        </div>
-                        <div class="col">
-                            <p>Oracle SQL</p>
+                            <p>Typescript, React</p>
                             <p>****</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <p>Git</p>
-                            <p>****</p>
-                        </div>
-                        <div class="col">
-                            <p>Bootstrap</p>
-                            <p>****</p>
+                            <p>C++, C#</p>
+                            <p>***</p>
                         </div>
                         <div class="col">
                             <p>Python</p>
+                            <p>***</p>
+                        </div>
+                        <div class="col">
+                            <p>Oracle SQL</p>
+                            <p>***</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>C, Java</p>
                             <p>**</p>
                         </div>
                         <div class="col">
-                            <p>Elixir LiveView</p>
-                            <p>...</p>
+                            <p>Haskell, Scala</p>
+                            <p>**</p>
+                        </div>
+                        <div class="col">
+                            <p>Vue.js, Angular</p>
+                            <p>**</p>
                         </div>
                     </div>
                 </li>
@@ -429,18 +239,17 @@
             <h3>Languages</h3>
             <ul class="entries">
                 <li>
-                    <h4 data-target="hu">Hungarian
-                        <i class="bi bi-chevron-down" data-toggle-icon="hu"></i></h4>
-                    <div id="hu" class="expandable">
-                        <p>native</p>
-                    </div>
+                    <h4 data-target="hu">Hungarian - native</h4>
                 </li>
                 <li>
-                    <h4 data-target="en">English
+                    <h4 data-target="en">English - professional
                         <i class="bi bi-chevron-down" data-toggle-icon="en"></i></h4>
                     <div id="en" class="expandable">
                         <p>IELTS Academic 7.5 points <span class="date">2022</span></p>
                     </div>
+                </li>
+                <li>
+                    <h4 data-target="en">Danish - beginner</h4>
                 </li>
             </ul>
         </div>
@@ -472,14 +281,12 @@
                         <i class="bi bi-chevron-down" data-toggle-icon="tekla"></i>
                     </h4>
                     <div id="tekla" class="expandable">
-                        <p>About the creation of the Erasmus Equivalence Database:</p>
                         <p title="Translated with www.DeepL.com/Translator (free version)">
-                            "Dominik Katkó supported the preparatory period for the launch of the database with great 
+                            "Dominik Katkó supported the preparatory period for the launch of the [Erasmus equivalence] database with great 
                             competence and flexibility, and as a result, he delivered the planned online program on time 
-                            and to the expectations. […] The ELTE BTK [Faculty of Humanities] is highly satisfied with the 
+                            and to the expectations. […] The Faculty of Humanities is highly satisfied with the 
                             work of the student of the Faculty of Informatics, Dominik Katkó was a punctual, reliable, 
-                            creative and flexible partner in this exciting and not easy task."</p>
-
+                            creative and flexible partner in this exciting and not easy task." (2022)</p>
                     </div>
                 </li>
                 <li>
@@ -489,7 +296,7 @@
                     <div id="kozsik" class="expandable">
                         <p title="Translated with www.DeepL.com/Translator (free version)">
                             "I am convinced that Dominik Katkó is an outstanding student, with extraordinary achievements 
-                            in his studies, in research, in teaching, in innovation and in work for the society."</p>
+                            in his studies, in research, in teaching, in innovation and in work for the society." (2022)</p>
                     </div>
                 </li>
                 <li>
@@ -522,7 +329,7 @@
                             "He showed that he understood the material and gave 
                             comprehensive answers to all questions, and I think he also 
                             conveyed well how good it feels to solve a more complicated 
-                            problem related to the subject. I would recommend to others."
+                            problem related to the subject. I would recommend to others." (2022)
                         </p>
                     </div>
                 </li>
@@ -532,45 +339,14 @@
             <h3>Talks</h3>
             <ul class="entries">
                 <li>
-                    <h4 data-target="codebeam">Code Beam America <i class="bi bi-chevron-down" data-toggle-icon="codebeam"></i> 
+                    <h4 data-target="codebeam">Code Beam America: <a href="https://codebeamamerica.com/talks/refactoring-via-the-language-server-protocol/" target="_blank">Refactoring via the Language Server Protocol</a></i> 
                         <span class="date">2022</span></h4>
-                    <div id="codebeam" class="expandable">
-                        <p>Presentation: Refactoring via the Language Server Protocol</p>
-                        <p>Co-speaker: Simon Thompson</p>
-                        <p>Website: <a href="https://codebeamamerica.com/talks/refactoring-via-the-language-server-protocol/" target="blank">
-                            codebeamamerica.com
-                        </a></p>
-                    </div>
                 </li>
             </ul>
         </div>
-        <div class="section">
-            <h3>Research interests</h3>
-            <ul class="entries">
-                <li>
-                    <p>Data security
-                        <span class="divider"></span> program analysis & verification
-                        <span class="divider"></span> compilers
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h3>About me</h3>
-            <ul class="entries">
-                <li>
-                    <p>I am always looking for new ways how can I help the communities around me and create something new.
-                        Although I have tried myself in many areas, I am still ready to experience and learn new things and
-                        technologies.</p>
-                    <p>When it comes to programming, I am interested in new architectural concepts and how these support
-                        maintainable,
-                        transparent, and secure code by design.</p>
-                    <p>In my free time, I go hiking or cycling with friends, play board games or paint some pictures.</p>
-                </li>
-            </ul>
-           
-        </div>
+       
     </div>
+    <p style="float: right;"><i>Thank you for reading my CV.</i></p>
 </body>
 
 <script>
